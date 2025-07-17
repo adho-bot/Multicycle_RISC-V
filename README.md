@@ -1,5 +1,4 @@
-**# Multicycle_RISC-V**
-Muticycle RISC-V Processor for my Summer internship.
+**Muticycle RISC-V Processor for my Summer internship.**
 
 **Code Availability**
 
