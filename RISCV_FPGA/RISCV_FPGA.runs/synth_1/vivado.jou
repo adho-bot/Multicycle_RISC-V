@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Jul 19 07:56:24 2025
+# Process ID         : 243595
+# Current directory  : /home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1
+# Command line       : vivado -log RISCVBoard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCVBoard.tcl
+# Log file           : /home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/RISCVBoard.vds
+# Journal file       : /home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/vivado.jou
+# Running On         : gary-IdeaPad-Slim-5-Light-14ABR8
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 7 7730U with Radeon Graphics
+# CPU Frequency      : 1736.509 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14481 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 18776 MB
+# Available Virtual  : 14382 MB
+#-----------------------------------------------------------
+source RISCVBoard.tcl -notrace

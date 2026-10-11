@@ -1,0 +1,21 @@
+org 0
+start
+    li x1, 0b10101001  ; Initial LED_O Value
+    li x2, 0x000000C8  ; Memory location of LEDs 
+    li x4, 0x00000002  ; Delay counter
+    li x7, 20  	       ; bits to shift the delay counter by    
+
+main_loop
+    sw x1, 0[x2]       ; Store current LED pattern to memory
+    
+    ; Delay loop
+    sll x5, x4, x7     ; Shift delay counter left by 20 bits
+delay_loop
+    addi x5, x5, -1    ; Decrement delay counter
+    bne x5, x0, delay_loop ; Continue if not zero
+    
+    ; Toggle all LED bits
+    xori x1, x1, 0xFF 
+    
+    
+    j main_loop

@@ -1,0 +1,53 @@
+;I have currently allocated addresses 0 to 99 for instructions,. rest are for data
+org 0
+
+start	
+    li x1, 0
+    sw x1, 400[x0] 
+
+   
+    li x1, -1
+    sw x1, 404[x0]
+
+    li x1, -2
+    sw x1, 408[x0]
+
+
+    li x1, -3
+    sw x1, 412[x0]
+
+    li x1, -4
+    sw x1, 416[x0]
+
+    li x1, -5
+    sw x1, 420[x0]
+
+    li x1, -6
+    sw x1, 424[x0]
+
+    lw x2, 424[x0]
+    addi x2, x2, 1
+    sw x2, 428[x0]
+
+    lw x3, 420[x0]
+    addi x3, x3, 2
+    sw x3, 432[x0]
+
+    lw x4, 416[x0]
+    addi x4, x4, 3
+    sw x4, 436[x0]
+
+    lw x5, 412[x0]
+    addi x5, x5, 4
+    sw x5, 440[x0]
+
+    lw x6, 408[x0]
+    addi x6, x6, 5
+    sw x6, 444[x0]
+
+    lw x7, 404[x0]
+    addi x7, x7, 6
+    sw x7, 448[x0]
+
+loop
+    j loop	

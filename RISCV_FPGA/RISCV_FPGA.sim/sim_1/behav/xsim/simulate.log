@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+$stop called at time : 1550 ns : File "/home/gary/RISC_V/riscv/RISCV_testbench.sv" Line 75
+$stop called at time : 1550 ns : File "/home/gary/RISC_V/riscv/RISCV_testbench.sv" Line 75

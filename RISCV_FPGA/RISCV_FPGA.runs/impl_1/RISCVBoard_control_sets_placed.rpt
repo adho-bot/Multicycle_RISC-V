@@ -1,0 +1,126 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Sat Jul 19 07:57:51 2025
+| Host         : gary-IdeaPad-Slim-5-Light-14ABR8 running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_control_sets -verbose -file RISCVBoard_control_sets_placed.rpt
+| Design       : RISCVBoard
+| Device       : xc7s50
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    48 |
+|    Minimum number of control sets                        |    48 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    48 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    45 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              13 |            4 |
+| No           | Yes                   | No                     |              65 |           28 |
+| Yes          | No                    | No                     |              52 |           24 |
+| Yes          | No                    | Yes                    |              64 |           16 |
+| Yes          | Yes                   | No                     |            1094 |          730 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |                       Enable Signal                      |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+----------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+| ~clock_instance/inst/clk_out1 | RISCV_instance/datapath/PC/PC_out_reg[2]_0[0]            |                                             |                1 |              4 |         4.00 |
+| ~clock_instance/inst/clk_out1 | RISCV_instance/datapath/PC/E[0]                          |                                             |                4 |              8 |         2.00 |
+| ~clock_instance/inst/clk_out1 | RISCV_instance/datapath/PC/PC_out_reg[3]_1[0]            |                                             |                3 |              8 |         2.67 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_0[0]          | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_15[0]         | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_26[0]         | RISCV_instance/datapath/register_bank/AR[0] |               24 |             32 |         1.33 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_29[0]         | RISCV_instance/datapath/register_bank/AR[0] |               19 |             32 |         1.68 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/FSM_onehot_state_reg[10]_2[0] | RISCV_instance/datapath/register_bank/AR[0] |               15 |             32 |         2.13 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/E[0]                          | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_23[0]         | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_10[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_17[0]         | RISCV_instance/datapath/register_bank/AR[0] |               19 |             32 |         1.68 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_19[0]         | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_18[0]         | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_16[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_22[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_25[0]         | RISCV_instance/datapath/register_bank/AR[0] |               20 |             32 |         1.60 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_21[0]         | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_20[0]         | RISCV_instance/datapath/register_bank/AR[0] |               25 |             32 |         1.28 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_2[0]          | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_11[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_1[0]          | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+| ~clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/FSM_onehot_state_reg[10]_0[0] |                                             |               16 |             32 |         2.00 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10][0]            | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_24[0]         | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_9[0]          | RISCV_instance/datapath/register_bank/AR[0] |               20 |             32 |         1.60 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_6[0]          | RISCV_instance/datapath/register_bank/AR[0] |               24 |             32 |         1.33 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_8[0]          | RISCV_instance/datapath/register_bank/AR[0] |               24 |             32 |         1.33 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_7[0]          | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_28[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_27[0]         | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_4[0]          | RISCV_instance/datapath/register_bank/AR[0] |               21 |             32 |         1.52 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_3[0]          | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_5[0]          | RISCV_instance/datapath/register_bank/AR[0] |               18 |             32 |         1.78 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_12[0]         | RISCV_instance/datapath/register_bank/AR[0] |               23 |             32 |         1.39 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_14[0]         | RISCV_instance/datapath/register_bank/AR[0] |               22 |             32 |         1.45 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[10]_13[0]         | RISCV_instance/datapath/register_bank/AR[0] |               20 |             32 |         1.60 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/FSM_onehot_state_reg[9]_0     | RISCV_instance/datapath/register_bank/AR[0] |               18 |             38 |         2.11 |
+|  clock_instance/inst/clk_out1 | RISCV_instance/control/FSM/out_reg_reg[0][0]             | RISCV_instance/datapath/register_bank/AR[0] |               16 |             64 |         4.00 |
+|  clock_instance/inst/clk_out1 |                                                          | RISCV_instance/datapath/register_bank/AR[0] |               32 |             78 |         2.44 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[12]_1              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[10]_3              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[11]_1              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[10]_2              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[10]_0              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[12]_3              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[12]_2              |                                             |               32 |            128 |         4.00 |
+|  n_0_1631_BUFG                | RISCV_instance/datapath/PC/PC_out_reg[11]_2              |                                             |               32 |            128 |         4.00 |
++-------------------------------+----------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+
+

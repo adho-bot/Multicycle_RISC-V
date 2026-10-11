@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "../../../../RISCV_FPGA.ip_user_files/ipstatic" \
+"../../../../../RISCV.sv" \
+"../../../../../RISCV_ALU.sv" \
+"../../../../../RISCV_FSM.sv" \
+"../../../../../RISCV_PC.sv" \
+"../../../../../RISCV_adder.sv" \
+"../../../../../RISCV_control.sv" \
+"../../../../../RISCV_control_decode.sv" \
+"../../../../../RISCV_datapath.sv" \
+"../../../../../RISCV_datapath_register.sv" \
+"../../../../../RISCV_memory.sv" \
+"../../../../../RISCV_mux32bit21.sv" \
+"../../../../../RISCV_mux32bit41.sv" \
+"../../../../../RISCV_registers.sv" \
+"../../../../../RISCV_sign_extender.sv" \
+"../../../../../RISCV_testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

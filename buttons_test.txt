@@ -1,0 +1,19 @@
+org 0
+start
+    li x1, 0b10101001  ; Initial LED_O Value
+    li x2, 0x000000C8  ; Memory location of LEDs 
+    li x3, 0x000000C4  ; Memory location for Button {SW4, SW3, SW2, SW1}
+
+main_loop
+    lw x4, 0[x3]	; Load switch values into register 4
+    andi x5, x4, 0x01   ; Check if switch 1 is pressed
+    beq x5, x0, pressed ; branch if button is pressed     
+    sw x0, 0[x2]
+    j main_loop
+
+
+pressed
+	sw x1, 0[x2]
+	j main_loop
+
+

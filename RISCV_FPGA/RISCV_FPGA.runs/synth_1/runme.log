@@ -1,0 +1,512 @@
+
+*** Running vivado
+    with args -log RISCVBoard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCVBoard.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Jul 19 07:56:24 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source RISCVBoard.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.srcs/utils_1/imports/synth_1/RISCV.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.srcs/utils_1/imports/synth_1/RISCV.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top RISCVBoard -part xc7s50fgga484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50fgga484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 243642
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2083.324 ; gain = 440.711 ; free physical = 5403 ; free virtual = 12469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISCVBoard' [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.srcs/sources_1/new/RISCVBoard.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/.Xil/Vivado-243595-gary-IdeaPad-Slim-5-Light-14ABR8/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/.Xil/Vivado-243595-gary-IdeaPad-Slim-5-Light-14ABR8/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV' [/home/gary/RISC_V/riscv/RISCV.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_datapath' [/home/gary/RISC_V/riscv/RISCV_datapath.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_PC' [/home/gary/RISC_V/riscv/RISCV_PC.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_PC' (0#1) [/home/gary/RISC_V/riscv/RISCV_PC.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_sign_extender' [/home/gary/RISC_V/riscv/RISCV_sign_extender.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_sign_extender' (0#1) [/home/gary/RISC_V/riscv/RISCV_sign_extender.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_adder' [/home/gary/RISC_V/riscv/RISCV_adder.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_mux32bit21' [/home/gary/RISC_V/riscv/RISCV_mux32bit21.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_mux32bit21' (0#1) [/home/gary/RISC_V/riscv/RISCV_mux32bit21.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_adder' (0#1) [/home/gary/RISC_V/riscv/RISCV_adder.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_ALU' [/home/gary/RISC_V/riscv/RISCV_ALU.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_ALU' (0#1) [/home/gary/RISC_V/riscv/RISCV_ALU.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_datapath_register' [/home/gary/RISC_V/riscv/RISCV_datapath_register.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_datapath_register' (0#1) [/home/gary/RISC_V/riscv/RISCV_datapath_register.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_registers' [/home/gary/RISC_V/riscv/RISCV_registers.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_registers' (0#1) [/home/gary/RISC_V/riscv/RISCV_registers.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_mux32bit41' [/home/gary/RISC_V/riscv/RISCV_mux32bit41.sv:3]
+INFO: [Synth 8-226] default block is never used [/home/gary/RISC_V/riscv/RISCV_mux32bit41.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_mux32bit41' (0#1) [/home/gary/RISC_V/riscv/RISCV_mux32bit41.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_datapath' (0#1) [/home/gary/RISC_V/riscv/RISCV_datapath.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_control' [/home/gary/RISC_V/riscv/RISCV_control.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_FSM' [/home/gary/RISC_V/riscv/RISCV_FSM.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_FSM' (0#1) [/home/gary/RISC_V/riscv/RISCV_FSM.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_control_decode' [/home/gary/RISC_V/riscv/RISCV_control_decode.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gary/RISC_V/riscv/RISCV_control_decode.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_control_decode' (0#1) [/home/gary/RISC_V/riscv/RISCV_control_decode.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_control' (0#1) [/home/gary/RISC_V/riscv/RISCV_control.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV' (0#1) [/home/gary/RISC_V/riscv/RISCV.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_memory' [/home/gary/RISC_V/riscv/RISCV_memory.sv:2]
+INFO: [Synth 8-3876] $readmem data file '/home/gary/bin/code.hex' is read successfully [/home/gary/RISC_V/riscv/RISCV_memory.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_memory' (0#1) [/home/gary/RISC_V/riscv/RISCV_memory.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'RISCVBoard' (0#1) [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.srcs/sources_1/new/RISCVBoard.sv:24]
+WARNING: [Synth 8-3917] design RISCVBoard has port FPGA_LED_NEN driven by constant 0
+WARNING: [Synth 8-3917] design RISCVBoard has port FPGA_LCD_NBL driven by constant 0
+WARNING: [Synth 8-7129] Port address[31] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[30] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[29] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[28] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[27] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[26] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[25] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[24] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[23] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[22] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[21] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[20] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[19] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[18] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[17] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[16] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[15] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[14] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[13] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module RISCV_memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[31] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[30] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[29] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[28] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[27] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[26] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[25] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[24] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[23] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[22] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[21] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[20] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[19] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[18] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[17] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[16] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[15] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[14] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[13] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[12] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[11] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[10] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[9] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[8] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[7] in module RISCV_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[6] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[5] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[4] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[3] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[2] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[1] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[0] in module RISCV_sign_extender is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2163.293 ; gain = 520.680 ; free physical = 5321 ; free virtual = 12388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2178.137 ; gain = 535.523 ; free physical = 5321 ; free virtual = 12388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2178.137 ; gain = 535.523 ; free physical = 5321 ; free virtual = 12388
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2181.105 ; gain = 0.000 ; free physical = 5320 ; free virtual = 12386
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_instance'
+Finished Parsing XDC File [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_instance'
+Parsing XDC File [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'FTDI_TXD'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'FTDI_RXD'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'FTDI_NRTS'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'FTDI_NCTS'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'cclk'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'spi_cs'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'spi_din'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[0]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[1]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[2]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[3]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[4]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[5]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[6]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[7]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[8]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[9]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[10]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[11]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[12]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[13]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[14]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_0[15]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[16]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[17]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[18]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[19]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[20]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[21]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[22]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[23]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[24]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[25]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[26]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[27]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[28]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[29]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[30]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_IO_1[31]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_0'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_1'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_2'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_3'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_4'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_5'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_6'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_7'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_8'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_9'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_10'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_11'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_12'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_13'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_14'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:184]
+WARNING: [Vivado 12-584] No ports matched 'FPGA_ARDU_15'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D0_p'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D0_n'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D1_p'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:216]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D1_n'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:217]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D2_p'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:218]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_D2_n'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:219]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_CLK_p'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:220]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_TMDS_CLK_n'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:221]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_DCC_CLK'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:223]
+WARNING: [Vivado 12-584] No ports matched 'R_FPGA_DCC_DATA'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:225]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[0]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:229]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[1]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:230]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[2]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:231]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[3]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:232]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[4]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:233]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[5]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:234]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[6]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:235]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[7]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:236]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[8]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[9]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:238]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[10]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[11]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[12]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[13]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[14]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[15]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[16]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[17]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[18]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:247]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[19]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[20]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[21]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[22]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[23]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[24]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:253]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[25]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[26]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[27]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[28]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[29]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[30]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_D[31]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_A[0]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:262]
+WARNING: [Vivado 12-584] No ports matched 'SRAM_A[1]'. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:263]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc:263]
+Finished Parsing XDC File [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/RISCVBoard_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gary/RISC_V/riscv/new_lab_board_constraints_v1.2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RISCVBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RISCVBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2301.906 ; gain = 0.000 ; free physical = 5472 ; free virtual = 12489
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2301.941 ; gain = 0.000 ; free physical = 5471 ; free virtual = 12489
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2301.941 ; gain = 659.328 ; free physical = 5489 ; free virtual = 12506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50fgga484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.910 ; gain = 667.297 ; free physical = 5489 ; free virtual = 12506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.910 ; gain = 667.297 ; free physical = 5489 ; free virtual = 12507
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RISCV_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                    0000000000001 |                             0000
+                 iSTATE5 |                    0000000000010 |                             0001
+                 iSTATE9 |                    0000000000100 |                             0110
+                iSTATE10 |                    0000000001000 |                             1000
+                 iSTATE8 |                    0000000010000 |                             0111
+                 iSTATE7 |                    0000000100000 |                             1001
+                 iSTATE1 |                    0000001000000 |                             0010
+                  iSTATE |                    0000010000000 |                             0011
+                 iSTATE4 |                    0000100000000 |                             1010
+                iSTATE11 |                    0001000000000 |                             0101
+                 iSTATE2 |                    0010000000000 |                             1100
+                 iSTATE0 |                    0100000000000 |                             0100
+                 iSTATE3 |                    1000000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'RISCV_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2309.910 ; gain = 667.297 ; free physical = 5489 ; free virtual = 12508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 41    
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	  13 Input   13 Bit        Muxes := 1     
+	   7 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	  14 Input    5 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 36    
+	  14 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design RISCVBoard has port FPGA_LED_NEN driven by constant 0
+WARNING: [Synth 8-3917] design RISCVBoard has port FPGA_LCD_NBL driven by constant 0
+WARNING: [Synth 8-7129] Port in_sign_ext[6] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[5] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[4] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[3] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[2] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[1] in module RISCV_sign_extender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_sign_ext[0] in module RISCV_sign_extender is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2309.910 ; gain = 667.297 ; free physical = 5426 ; free virtual = 12450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------------------+-----------+----------------------+------------------+
+|RISCVBoard  | memory_instance/memory_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
++------------+----------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2349.910 ; gain = 707.297 ; free physical = 5384 ; free virtual = 12408
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2475.160 ; gain = 832.547 ; free physical = 5266 ; free virtual = 12291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------------------+-----------+----------------------+------------------+
+|RISCVBoard  | memory_instance/memory_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
++------------+----------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2475.160 ; gain = 832.547 ; free physical = 5267 ; free virtual = 12291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz   |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    24|
+|4     |LUT1      |     2|
+|5     |LUT2      |    70|
+|6     |LUT3      |   147|
+|7     |LUT4      |   151|
+|8     |LUT5      |   166|
+|9     |LUT6      |  1048|
+|10    |MUXF7     |   288|
+|11    |RAM256X1S |   256|
+|12    |FDCE      |    76|
+|13    |FDPE      |     1|
+|14    |FDRE      |  1210|
+|15    |IBUF      |     4|
+|16    |IOBUF     |     8|
+|17    |OBUF      |    13|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.973 ; gain = 930.359 ; free physical = 5181 ; free virtual = 12206
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2572.973 ; gain = 806.555 ; free physical = 5182 ; free virtual = 12206
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2572.980 ; gain = 930.359 ; free physical = 5182 ; free virtual = 12206
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2572.980 ; gain = 0.000 ; free physical = 5350 ; free virtual = 12375
+INFO: [Netlist 29-17] Analyzing 576 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2629.000 ; gain = 0.000 ; free physical = 5351 ; free virtual = 12376
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 264 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 256 instances
+
+Synth Design complete | Checksum: f98fba8f
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 2629.035 ; gain = 1120.500 ; free physical = 5351 ; free virtual = 12376
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1875.096; main = 1756.388; forked = 275.834
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3418.824; main = 2629.004; forked = 963.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2653.012 ; gain = 0.000 ; free physical = 5351 ; free virtual = 12376
+INFO: [Common 17-1381] The checkpoint '/home/gary/RISC_V/riscv/RISCV_FPGA/RISCV_FPGA.runs/synth_1/RISCVBoard.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file RISCVBoard_utilization_synth.rpt -pb RISCVBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 19 07:56:59 2025...
